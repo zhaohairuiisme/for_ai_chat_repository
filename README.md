@@ -118,3 +118,48 @@ pip cache purge
 ```bash
 pip cache remove package_name
 ```
+
+> package_name 为要删除的包的名字
+
+希望安装特定版本的包，可以使用 == 语法：
+
+```bash
+pip install package_name==1.0.0
+```
+
+遇到下载不稳定时，可以设置超时时间：
+例如，将超时时间设置为 10 秒：
+
+```bash
+pip install package_name --timeout 10
+```
+
+将当前环境的包导出：
+
+```bash
+pip freeze > requirements.txt
+```
+
+从 `requirements.txt` 安装指定包：
+
+```bash
+pip install -r requirements.txt
+```
+
+自定义源时的信任设置：
+
+比如信任清华源：
+
+```bash
+pip install package_name --trusted-host pypi.tuna.tsinghua.edu.cn
+```
+
+<h1>问题</h1>
+
+换源之后下载的包无法匹配其他依赖包:
+
+> ERROR: Could not find a version that satisfies the requirement …
+
+网络无法连接：
+
+> WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by ‘NewConnectionError(’<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7f4248ebf7c0>: Failed to establish a new connection: [Errno 101] 网络不可达’)':…
