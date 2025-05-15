@@ -1,6 +1,6 @@
 # 你好
 
-你可以克隆 index.py 文件，不过，你需要先安装Python（python.org） 
+你可以克隆 index.py 文件，不过，你需要先安装 Python [python.org]
 
 --- 
 
@@ -73,17 +73,7 @@ pip config unset global.extra-index-url --user
 ```
 
 <h3>其他关于 pip 的操作和设置</h3>
-检查 pip 的版本：
 
-```bash
-pip --version
-```
-
-更新 pip 本身：
-
-```bash
-pip install --upgrade pip
-```
 
 查看当前环境中已安装的所有包及其版本信息：
 
@@ -121,38 +111,6 @@ pip cache remove package_name
 
 > package_name 为要删除的包的名字
 
-希望安装特定版本的包，可以使用 == 语法：
-
-```bash
-pip install package_name==1.0.0
-```
-
-遇到下载不稳定时，可以设置超时时间：
-例如，将超时时间设置为 10 秒：
-
-```bash
-pip install package_name --timeout 10
-```
-
-将当前环境的包导出：
-
-```bash
-pip freeze > requirements.txt
-```
-
-从 `requirements.txt` 安装指定包：
-
-```bash
-pip install -r requirements.txt
-```
-
-自定义源时的信任设置：
-
-比如信任清华源：
-
-```bash
-pip install package_name --trusted-host pypi.tuna.tsinghua.edu.cn
-```
 
 <h1>问题</h1>
 
