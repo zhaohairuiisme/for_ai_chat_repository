@@ -1,6 +1,7 @@
 # 你好
 
-你可以克隆 index.py 文件，不过，你需要先安装 Python [python.org]
+你可以克隆 index.py 文件，不过，你需要先安装 Python （It's in python.org）
+
 
 --- 
 
